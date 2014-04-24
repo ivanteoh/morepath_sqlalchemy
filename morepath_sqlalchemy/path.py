@@ -2,9 +2,11 @@ from .main import app, Session
 from .model import Document, Root
 from .collection import DocumentCollection
 
+
 @app.path(model=Root, path='/')
 def get_root():
     return Root()
+
 
 @app.path(model=Document, path='documents/{id}',
           converters={'id': int})

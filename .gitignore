@@ -8,3 +8,4 @@ contents/*
 include
 lib
 *.egg-info
+*.pyc

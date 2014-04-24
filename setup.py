@@ -1,4 +1,3 @@
-import os
 from setuptools import setup, find_packages
 
 setup(name='morepath_sqlalchemy',
@@ -11,16 +10,16 @@ setup(name='morepath_sqlalchemy',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-        'setuptools',
-        'morepath',
-        'transaction',
-        'more.transaction',
-        'zope.sqlalchemy >= 0.7.4',
-        'sqlalchemy >= 0.9',
-        ],
-      entry_points= {
-        'console_scripts': [
-            'morepath_sqlalchemy = morepath_sqlalchemy.main:main',
-            ]
-        },
+          'setuptools',
+          'morepath',
+          'transaction',
+          'more.transaction',
+          'zope.sqlalchemy >= 0.7.4',
+          'sqlalchemy >= 0.9',
+          ],
+      entry_points={
+          'console_scripts': [
+              'morepath_sqlalchemy = morepath_sqlalchemy.main:main',
+              ]
+          },
       )

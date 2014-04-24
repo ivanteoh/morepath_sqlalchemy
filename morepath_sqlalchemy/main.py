@@ -10,6 +10,7 @@ register(Session)
 
 app = morepath.App(name='SQLAlchemy demo', extends=[transaction_app])
 
+
 def main():
     engine = sqlalchemy.create_engine('sqlite:///morepath_sqlalchemy.db')
     Session.configure(bind=engine)

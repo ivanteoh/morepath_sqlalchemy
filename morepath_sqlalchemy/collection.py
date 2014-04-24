@@ -3,6 +3,7 @@ from .main import Session
 
 MAX_LIMIT = 20
 
+
 class DocumentCollection(object):
     def __init__(self, offset, limit):
         self.offset = offset
@@ -30,4 +31,3 @@ class DocumentCollection(object):
         if new_offset >= count:
             return None
         return DocumentCollection(new_offset, self.limit)
-
