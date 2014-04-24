@@ -5,3 +5,6 @@ src
 bin
 develop-eggs
 contents/*
+include
+lib
+*.egg-info
